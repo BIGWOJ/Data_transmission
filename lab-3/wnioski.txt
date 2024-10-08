@@ -1,0 +1,94 @@
+1. Małe wartości szerokości pasm wnioskują, że zmodulowane sygnały są mocno skoncentrowane wokół częstotliwości nośnej.
+Patrząc na wykres oznacza to, że przy globalnym maksimum funkcji reprezentującej widmo w skali decybelowej nie następuje rozproszenie.
+
+2. Analogicznie - im szerokość pasma jest większa tym rozproszenie przy "szczycie", wokół częstotliwości nośnej, wykresu jest większe. 
+
+Dla wartości do generowania przebiegów:
+
+częstotliwość nośna
+fn = 50
+częsotliwość informacyjna
+fm = 1
+częstotliwość próbkowania
+fs = 500
+czas przebiegu
+t = 1
+
+Oraz współczynników modulacji:
+
+amplitudy
+ka = [0.5, 7, 25]
+
+fazy
+kp = [0.5, pi/2, 5*pi]
+
+częstotliwości
+kf = [0.25, pi/4, 10*pi]
+
+
+Wyniki są następujące:
+
+
+Wykres: za_a_widmo
+Szerokość pasma 3dB: 0Hz
+
+Wykres: za_b_widmo
+Szerokość pasma 6dB: 2Hz
+
+Wykres: za_c_widmo
+Szerokość pasma 12dB: 2Hz
+
+Wykres: zp_a_widmo
+Szerokość pasma 3dB: 0Hz
+
+Wykres: zp_b_widmo
+Szerokość pasma 6dB: 2Hz
+
+Wykres: zp_c_widmo
+Szerokość pasma 12dB: 34Hz
+
+Wykres: zf_a_widmo
+Szerokość pasma 3dB: 0Hz
+
+Wykres: zf_b_widmo
+Szerokość pasma 6dB: 0Hz
+
+Wykres: zf_c_widmo
+Szerokość pasma 12dB: 66Hz
+
+
+
+Po zwiększeniu dziesięciokrotnie wartości ka, kp oraz kf wyniki są następujące:
+
+
+Wykres: za_a_widmo
+Szerokość pasma 3dB: 2Hz
+
+Wykres: za_b_widmo
+Szerokość pasma 6dB: 2Hz
+
+Wykres: za_c_widmo
+Szerokość pasma 12dB: 2Hz
+
+Wykres: zp_a_widmo
+Szerokość pasma 3dB: 8Hz
+
+Wykres: zp_b_widmo
+Szerokość pasma 6dB: 32Hz
+
+Wykres: zp_c_widmo
+Szerokość pasma 12dB: 209Hz
+
+Wykres: zf_a_widmo
+Szerokość pasma 3dB: 4Hz
+
+Wykres: zf_b_widmo
+Szerokość pasma 6dB: 16Hz
+
+Wykres: zf_c_widmo
+Szerokość pasma 12dB: 247Hz
+
+
+Porównując wyniki można wywnioskować, że modulacja amplitudy (ka) w najmniejszych stopniu oddziałowuje na szerokość pasma w powyższych testach.
+Natomiast modulacja fazy (kp) oraz częstotliwości (kf) w znaczącym stopniu wpływają na szerokość pasma.
+

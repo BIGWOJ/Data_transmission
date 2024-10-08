@@ -1,0 +1,8 @@
+1. Cały schemat uproszczonego modelu cyfrowego został w mojej ocenie poprawnie zaimplementowany, lecz ma swoje niedociągnięcia.
+2. Procesy kodowania oraz modulowania odbywają się poprawnie, co zostało sprawdzone na wielu próbach. 
+3. Zniekształcenie ostatecznych wyników pojawia się w ostatnich blokach - demodulowania oraz dekodowania. Pomimo, że kod jest poprawnie interpretowany to wynik nie jest poprawny.
+4. Obliczanie współczynnika BER także zostało zaimplementowane, jednakże z powodów przedstawionych w poprzednim punkcie, jego wynik nie jest miarodajny.
+5. Zostały zaimplementowane warianty kaskadowe dwóch konfiguracji: 
+a) dodanie szumu a później tłumienie sygnału
+b) tłumienie sygnału a później dodanie szumu
+6. W przeprowadzaniu doświadczeń jest możliwość wybrania dwóch koderów Hamminga, wszystkich trzech modulacji oraz dobraniu dla nich parametrów wedle życzenia.

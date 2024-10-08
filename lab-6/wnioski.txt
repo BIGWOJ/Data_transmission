@@ -1,0 +1,2 @@
+1. Dekoder prawidłowo dekoduje zakodowane słowo bitowe. Jest ono identyczne jak słowo wejściowe.
+2. Podanie słowa o długości innej niż 4 bądź 11 bitów dla odpowiednio dekodera typu 4_7 oraz 15_11 skutkuje błędami.

@@ -1,0 +1,38 @@
+1. Implementacja dyskretnej transformaty Fouriera (DFT) pozwoliła na przekształcenie sygnału podanego w dziedzinie czasu na dziedzinę częstotliwości.
+2. Przy pomocy wcześniej zaimplementowanego DFT późniejsze obliczenie widma amplitudowego (w szczególności jego wykreślenie) pozwoliło określić najbardziej znaczące częstotliwości dla podanego sygnału
+3. Przy pomocy wykreślenia zmiany sygnału na skalę decybelową można ustalić różnice amplitud pomiędzy sygnałami o znaczących różnicach parametrów
+4. Ze względu na różnice implementacyjne (DFT korzysta ze złożoności kwadratowej ze względu na działaniu w oparciu o podwójną pętlę a FFT wykorzystuje algorytm dziel i zwyciężaj, który pozwala osiągnąć złożoność logarytmiczną)
+wbudowana implementacja FFT okazała się diametralnie szybsza od DFT. 
+Wyniki doświadczenia porównującego czasy obliczeń dla wykresów wyglądają następująco:
+ 
+
+Parametry wykresów:
+fs = 5000
+fi = 10
+f = 200
+t = 1
+
+Parametry wykresów funkcji b:
+fs = 2000
+t = 1
+
+Czas FFT dla sygnału x: 0.011993885040283
+Czas FFT dla sygnału y: 0.000000000000000
+Czas FFT dla sygnału z: 0.000000000000000
+Czas FFT dla sygnału v: 0.000000000000000
+Czas FFT dla sygnału u: 0.001000881195068
+Czas FFT dla sygnału b1: 0.000000000000000
+Czas FFT dla sygnału b2: 0.000000000000000
+Czas FFT dla sygnału b3: 0.000000000000000
+
+Czas DFT dla sygnału x: 44.90488839149475
+Czas DFT dla sygnału y: 44.871899127960205
+Czas DFT dla sygnału z: 44.62990713119507
+Czas DFT dla sygnału v: 44.49492025375366
+Czas DFT dla sygnału u: 44.399924516677856
+Czas DFT dla sygnału b1: 7.15398907661438
+Czas DFT dla sygnału b2: 7.1799914836883545
+Czas DFT dla sygnału b3: 7.319987773895264
+
+Sumaryczny czas FFT: 0.026998043060302734
+Sumaryczny czas DFT: 244.971506357193

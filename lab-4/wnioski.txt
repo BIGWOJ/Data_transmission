@@ -1,0 +1,27 @@
+Wyniki szacowania szerokość pasm wyglądają następująco:
+
+ASK
+Szerokość pasma 3dB: 0Hz
+Szerokość pasma 6dB: 0Hz
+Szerokość pasma 12dB: 0Hz
+
+PSK
+Szerokość pasma 3dB: 2Hz
+Szerokość pasma 6dB: 2Hz
+Szerokość pasma 12dB: 3Hz
+
+FSK
+Szerokość pasma 3dB: 0Hz
+Szerokość pasma 6dB: 10Hz
+Szerokość pasma 12dB: 12Hz
+
+Z powyższych testów można wyciągnąć kilka wniosków:
+
+1. Modulacja z przesuwem amplitudy (ASK) dla powyższych parametrów nie oddziałuje na zmianę szerokości pasm zmodulowanego sygnału. 
+Sygnały te są mocno skoncentrowane wokół cześtotliwości nośnej. 
+
+2. Modulacja z przesuwem fazy (PSK) ma zauważalny wpływ na zmianę szerokość pasm. Dzięki zaobserwowanym innym wartościom niż 0 można określić, 
+że przy tej modulacji wystąpiło rozproszenie wokół częstotliwości nośnej.
+
+3. Modulacja z przesuwem częstotliwości (FSK) ma największy wpływ na szacowanie szerokość pasm. 
+Co jest także jednoznaczne z największym oddziaływaniem na rozproszenie sygnałów wokół częstotliwości nośnej.

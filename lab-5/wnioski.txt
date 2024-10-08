@@ -1,0 +1,8 @@
+1. Po próbie demodulacji sygnału PSK w demodulatorze przeznaczonym dla ASK wyniki nie były poprawne.
+Taki sam efekt był dla wszystkich innych przypadków. Więc z tego można wywnioskować, że demodulator jest przeznaczony tylko do jednego typu zmodulowanego sygnału.
+
+2. Wybieranie liczby progowania h w demodulatorze ASK jest dynamiczne. Jest to przemnożenie największej wartości z tabeli wynikowej, która przechowuje wartości całek przez 2/3.
+Można przyjąć, że mniejszy "trójkąt" (patrząc na wykres ask_p przedstawiający wartości całek) jest trochę mniej niż połową większego "trójkąta". 
+Więc wybór wartości 2/3 jest bezpieczniejszym rozwiązaniem w przypadku nieporządanych zakłóceń. Próg w tym przypadku jest większy niż połowa, natomiast nie wpływa to negatywnie na końcowy wynik demodulatora.
+
+3. Osobiście najbardziej przypadły mi do gustu wykresy typu _p przedstawiające wspomiane wyżej "trójkąty" wynikowe całek. Jak dla mnie jest to prosta oraz zrozumiała forma przedstawienia bitów strumienia.
